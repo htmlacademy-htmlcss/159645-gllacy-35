@@ -860,6 +860,10 @@ body {
   background-color: #fcfcfc99;
 }
 
+.slider-pagination-button:disabled {
+  background-color: #b9b9b9;
+}
+
 .button-current {
   background-color: #fcfcfc;
 }
@@ -1945,9 +1949,10 @@ body {
   left: 4px;
   top: 2px;
   border: 1px solid #000000;
+  border-radius: 3px;
 }
 
-.filters-control:hover .control-mark {
+.control-input:hover ~ .control-mark {
   border: 1px solid #fcfcfc;
 }
 
@@ -1957,7 +1962,7 @@ body {
 }
 
 .control-input:disabled + .control-mark {
-  border-color: #2d3440;
+  border-color: #b9b9b9;
 }
 
 .control-input[type="checkbox"]:checked + .control-mark {
